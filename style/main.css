@@ -382,7 +382,9 @@ hr {
   transition: 100ms ease-in-out;
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
-  transition-property: transform; }
+  transition-property: transform; 
+  background-repeat: no-repeat;
+  background-size: 100%;}
   .tile .tile-inner {
     border-radius: 3px;
     background: #eee4da;
@@ -391,9 +393,7 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background-image: url("http://aom.heavengames.com/strategy/articles/13/pix/hermes.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: #FA5557;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
     background: #ede0c8;
