@@ -54,7 +54,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #fab613;
+  background: #13A6FA;
   padding: 15px;
   font-size: 25px;
   height: 25px;
@@ -77,11 +77,10 @@ h1.title {
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
-    color: red;
     font-size: 25px;
     line-height: 25px;
     font-weight: bold;
-    color: rgba(119, 110, 101, 0.9);
+    color: 13A6FA#;
     z-index: 100;
     -webkit-animation: move-up 600ms ease-in;
     -moz-animation: move-up 600ms ease-in;
@@ -165,7 +164,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #fcc545;
+  background: #45b9fb;
   border-radius: 1em;
   width: 500px;
   height: 500px;
@@ -250,7 +249,7 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 8px !important;
-  background: #fab613;
+  background: #13a6fa;
   box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
 }
   .grid-cell:last-child { margin-right: 0; }
@@ -518,7 +517,7 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background-color: #fab613;
+  background-color: #13A6FA;
   border-radius: 8px;
   padding: 0 20px;
   text-decoration: none !important;
