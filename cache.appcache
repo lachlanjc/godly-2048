@@ -1,9 +1,9 @@
 CACHE MANIFEST
 
-# Adds the ability to play the game online.
+# Adds the ability to play the game offline
 # The following comment needs to be updated whenever a change is made.
 # Run `rake appcache:update` to do so
-# Updated: 2014-05-07T12:44:43+02:00
+# Updated: 2014-05-14T19:03:45+00:00
 
 # Main page
 index.html
@@ -11,22 +11,9 @@ index.html
 # CSS
 style/main.css
 
-# Fonts
-style/fonts/clear-sans.css
-style/fonts/ClearSans-Bold-webfont.eot
-style/fonts/ClearSans-Bold-webfont.svg
-style/fonts/ClearSans-Bold-webfont.woff
-style/fonts/ClearSans-Light-webfont.eot
-style/fonts/ClearSans-Light-webfont.svg
-style/fonts/ClearSans-Light-webfont.woff
-style/fonts/ClearSans-Regular-webfont.eot
-style/fonts/ClearSans-Regular-webfont.svg
-style/fonts/ClearSans-Regular-webfont.woff
-
-# Other resources
+# Assets
+favicon.ico
 meta/apple-touch-icon.png
-meta/icon_bitcoin.svg
-meta/icon_pp.svg
 meta/og_image.png
 
 # JavaScript
@@ -40,8 +27,6 @@ js/html_actuator.js
 js/keyboard_input_manager.js
 js/local_storage_manager.js
 js/tile.js
-
-favicon.ico
 
 NETWORK:
 *
