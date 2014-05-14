@@ -104,13 +104,16 @@ a {
   cursor: pointer; }
 
 strong.important {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "proxima-nova", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 hr {
   border: none;
   border-bottom: 1px solid #ccc;
   margin: 1.5em auto;
 }
+.game-info { font-family: Georgia, serif; }
 
 .container {
   width: 500px;
@@ -384,6 +387,39 @@ hr {
       background-image: url("http://pfmscode.getnoodl.es/2048/zeus.jpg") !important;
     }
 
+.key {
+  display: block;
+}
+.key-row {
+  display: block !important;
+  margin: 2.33em 0;
+  height: 5em;
+}
+.key-row .content h4 {
+  font-size: 1.33em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  float: right;
+  width: 75%;
+}
+.key-row .content p {
+  font-family: Georgia, serif;
+  display: block;
+  float: right;
+  width: 75%;
+  margin: 0;
+}
+.key-row .tile {
+  width: 107px;
+  height: 107px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 5px;
+  background-color: #bbada0;
+  background: rgba(238, 228, 218, 0.35); }
+}
+
+
 @-webkit-keyframes appear {
   0% {
     opacity: 0;
@@ -490,9 +526,12 @@ hr {
 .game-intro {
   float: left;
   line-height: 42px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-family: Georgia, serif;
+  width: 65%;
+}
 
-.retry-button {
+.restart-button {
   display: inline-block;
   background-color: #13A6FA;
   border-radius: 8px;
@@ -507,14 +546,9 @@ hr {
   float: right; }
 
 .game-explanation {
-  margin-top: 50px; }
-
-.sharing {
-  margin-top: 20px;
-  text-align: center; }
-  .sharing > iframe, .sharing > span, .sharing > form {
-    display: inline-block;
-    vertical-align: middle; }
+  margin-top: 50px;
+  font-family: Georgia, serif;
+}
 
 @media screen and (max-width: 520px) {
   html, body {
