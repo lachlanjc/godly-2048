@@ -218,8 +218,7 @@ hr {
   position: absolute;
   z-index: 1; }
 
-.grid-row {
-  margin-bottom: 15px; }
+.grid-row { margin-bottom: 15px; }
   .grid-row:last-child {
     margin-bottom: 0; }
   .grid-row:after {
@@ -237,6 +236,7 @@ hr {
   box-shadow: inset 0 2px 54px rgba(0,0,0,0.1);
 }
   .grid-cell:last-child { margin-right: 0; }
+
 .tile-container {
   position: absolute;
   z-index: 2; }
@@ -357,11 +357,11 @@ hr {
     }
     .tile.tile-32 {
       color: #fff;
-      background-image: url("http://pfmscode.getnoodl.es/2048/aphrodite.jpg") !important;
+      background-image: url("http://pfmscode.getnoodl.es/2048/persephone.jpg") !important;
     }
     .tile.tile-64 {
       color: #fff;
-      background-image: url("http://pfmscode.getnoodl.es/2048/persephone.jpg") !important;
+      background-image: url("http://pfmscode.getnoodl.es/2048/aphrodite.jpg") !important;
     }
     .tile.tile-128 {
       color: #fff;
@@ -371,10 +371,11 @@ hr {
       background-image: url("http://pfmscode.getnoodl.es/2048/poseidon.jpg") !important;
     }
     .tile.tile-512 {
+      color: #fff;
       font-size: 45px;
       background-image: url("http://pfmscode.getnoodl.es/2048/athena.jpg") !important;
     }
-      @media screen and (max-width: 520px) { .tile.tile-512 .tile-inner { font-size: 25px; } }
+    @media screen and (max-width: 520px) { .tile.tile-512 .tile-inner { font-size: 25px; } }
     .tile.tile-1024 {
       color: #fff;
       background-image: url("http://pfmscode.getnoodl.es/2048/hera.jpg") !important;
@@ -491,7 +492,7 @@ hr {
   line-height: 42px;
   margin-bottom: 0; }
 
-.restart-button {
+.retry-button {
   display: inline-block;
   background-color: #13A6FA;
   border-radius: 8px;
