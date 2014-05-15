@@ -16,8 +16,7 @@ body { margin: 3em 0; }
 
 h1.title {
   font-size: 3em;
-  height: 80px;
-  font-weight: bold;
+  line-height: 1.1;
   margin: 0;
   display: block;
   float: left;
@@ -55,15 +54,16 @@ h1.title {
   position: relative;
   display: inline-block;
   background: #13A6FA;
-  padding: 15px;
   font-size: 25px;
-  height: 25px;
-  line-height: 47px;
+  height: 60px !important;
+  width: 85px;
+  line-height: 79px;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 12px;
   color: #fff;
   margin-top: 8px;
-  text-align: center; }
+  text-align: center;
+}
   .score-container:after, .best-container:after {
     position: absolute;
     width: 100%;
@@ -182,22 +182,25 @@ hr {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(238, 228, 218, 0.73);
+  background: rgba(255, 255, 255, 0.8);
   z-index: 100;
-  padding-top: 40px;
+  border-radius: 1em;
   text-align: center;
-  -webkit-animation: fade-in 800ms ease 1200ms;
+  /*-webkit-animation: fade-in 800ms ease 1200ms;
   -moz-animation: fade-in 800ms ease 1200ms;
   animation: fade-in 800ms ease 1200ms;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
+  animation-fill-mode: both;*/
+}
   .game-message p {
-    font-size: 60px;
+    font-size: 45px;
     font-weight: bold;
     height: 60px;
-    line-height: 60px;
-    margin-top: 222px; }
+    line-height: 1.5;
+    margin: auto;
+    width: 75% !important;
+  }
   .game-message .lower {
     display: block;
     margin-top: 29px; }
@@ -330,61 +333,23 @@ hr {
     z-index: 10;
     font-size: 35px;
     text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    color: #fff;
   }
-    @media screen and (max-width: 520px) {
-      .tile.tile-128 .tile-inner {
-        font-size: 25px; } }
-    @media screen and (max-width: 520px) {
-      .tile.tile-256 .tile-inner {
-        font-size: 25px; } }
-    @media screen and (max-width: 520px) { .tile.tile-1024 .tile-inner { font-size: 15px; } }
-    @media screen and (max-width: 520px) {
-      .tile.tile-super .tile-inner {
-        font-size: 10px; } }
 
-    .tile.tile-2 {
-      color: #fff;
-      background-image: url("http://pfmscode.getnoodl.es/2048/hermes.jpg") !important;
-    }
-    .tile.tile-4 {
-      color: #fff;
-      background-image: url("http://pfmscode.getnoodl.es/2048/apollo.jpg") !important;
-    }
-    .tile.tile-8 {
-      color: #fff;
-      background-image: url("http://pfmscode.getnoodl.es/2048/ares.jpg") !important;
-    }
-    .tile.tile-16 {
-      color: #fff;
-      background-image: url("http://pfmscode.getnoodl.es/2048/hercules.jpg") !important;
-    }
-    .tile.tile-32 {
-      color: #fff;
-      background-image: url("http://pfmscode.getnoodl.es/2048/persephone.jpg") !important;
-    }
-    .tile.tile-64 {
-      color: #fff;
-      background-image: url("http://pfmscode.getnoodl.es/2048/aphrodite.jpg") !important;
-    }
-    .tile.tile-128 {
-      color: #fff;
-      background-image: url("http://pfmscode.getnoodl.es/2048/hades.jpg") !important;
-    }
-    .tile.tile-256 {
-      background-image: url("http://pfmscode.getnoodl.es/2048/poseidon.jpg") !important;
-    }
-    .tile.tile-512 {
-      color: #fff;
-      font-size: 45px;
-      background-image: url("http://pfmscode.getnoodl.es/2048/athena.jpg") !important;
-    }
-    @media screen and (max-width: 520px) { .tile.tile-512 .tile-inner { font-size: 25px; } }
-    .tile.tile-1024 {
-      color: #fff;
-      background-image: url("http://pfmscode.getnoodl.es/2048/hera.jpg") !important;
-    }
-    .tile.tile-2048 {
-      background-image: url("http://pfmscode.getnoodl.es/2048/zeus.jpg") !important;
+    .tile.tile-2 { background-image: url("gods/hermes.jpg") !important; }
+    .tile.tile-4 { background-image: url("gods/hephaestus.jpg") !important; }
+    .tile.tile-8 { background-image: url("gods/ares.jpg") !important; }
+    .tile.tile-16 { background-image: url("gods/heracles.jpg") !important; }
+    .tile.tile-32 { background-image: url("gods/persephone.jpg") !important; }
+    .tile.tile-64 { background-image: url("gods/aphrodite.jpg") !important; }
+    .tile.tile-128 { background-image: url("gods/hades.jpg") !important; }
+    .tile.tile-256 { background-image: url("gods/athena.jpg") !important; }
+    .tile.tile-512 { background-image: url("gods/poseidon.jpg") !important; }
+    .tile.tile-1024 { background-image: url("gods/hera.jpg") !important; }
+    .tile.tile-2048 { background-image: url("gods/zeus.jpg") !important; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-128 .tile-inner, .tile.tile-256 .tile-inner, .tile.tile-512 .tile-inner { font-size: 25px; }
+      .tile.tile-1024 .tile-inner, .tile.tile-2048 .tile-inner, .tile.tile-super .tile-inner { font-size: 10px; }
     }
 
 .key {
@@ -393,12 +358,12 @@ hr {
 .key-row {
   display: block !important;
   margin: 2.33em 0;
-  height: 5em;
+  height: 10em;
 }
+div.key-row.big { height: 13.5em !important; }
 .key-row .content h4 {
-  font-size: 1.33em;
-  margin-bottom: 0.5em;
-  margin-top: 0;
+  font-size: 1.25em;
+  margin: 0;
   float: right;
   width: 75%;
 }
@@ -407,16 +372,15 @@ hr {
   display: block;
   float: right;
   width: 75%;
-  margin: 0;
+  margin: 0.25em 0 0 0;
+  font-size: 0.9em;
 }
 .key-row .tile {
   width: 107px;
   height: 107px;
-  margin-right: 10px;
   float: left;
-  border-radius: 5px;
-  background-color: #bbada0;
-  background: rgba(238, 228, 218, 0.35); }
+  border-radius: 8px;
+  background-size: 100%;
 }
 
 
@@ -543,12 +507,27 @@ hr {
   cursor: pointer;
   display: block;
   text-align: center;
-  float: right; }
-
-.game-explanation {
-  margin-top: 50px;
-  font-family: Georgia, serif;
+  float: right;
+  margin-top: 10px;
 }
+
+.retry-button {
+  display: inline-block;
+  background-color: #13A6FA;
+  border-radius: 8px;
+  padding: 0 20px;
+  text-decoration: none !important;
+  color: #fff;
+  height: 40px;
+  line-height: 42px;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 125px;
+ }
+ .restart-button:active, .retry-button:active { box-shadow: inset 0 3px 5px rgba(0,0,0,0.2) !important; }
+
+.game-explanation { font-family: Georgia, serif; }
 
 @media screen and (max-width: 520px) {
   html, body {
@@ -580,13 +559,6 @@ hr {
     box-sizing: border-box;
     line-height: 1.65; }
 
-  .restart-button {
-    width: 42%;
-    padding: 0;
-    display: block;
-    box-sizing: border-box;
-    margin-top: 2px; }
-
   .game-container {
     margin-top: 17px;
     position: relative;
@@ -599,22 +571,21 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #bbada0;
-    border-radius: 6px;
     width: 280px;
     height: 280px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
-  .game-message {
+  .sage {
     display: none;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 1em;
     z-index: 100;
     padding-top: 40px;
     text-align: center;
@@ -624,16 +595,18 @@ hr {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
-    .game-message p {
-      font-size: 60px;
+    .sage p {
+      font-size: 45px;
       font-weight: bold;
       height: 60px;
-      line-height: 60px;
-      margin-top: 222px; }
-    .game-message .lower {
+      line-height: 1.5;
+      margin: auto;
+      width: 75% !important;
+    }
+    .sage .lower {
       display: block;
       margin-top: 29px; }
-    .game-message a {
+    .sage a {
       display: inline-block;
       background: #8f7a66;
       border-radius: 3px;
@@ -642,19 +615,10 @@ hr {
       color: #fff;
       cursor: pointer;
       margin-left: 9px; }
-      .game-message a.keep-playing-button {
-        display: none; }
-    .game-message .score-sharing {
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 10px; }
-    .game-message.game-won {
+    .sage.game-won {
       background: rgba(237, 194, 46, 0.5);
       color: #fff; }
-      .game-message.game-won a.keep-playing-button {
-        display: inline-block; }
-    .game-message.game-won, .game-message.game-over {
-      display: block; }
+    .sage.game-won, .sage.game-over { display: block; }
 
   .grid-container {
     position: absolute;
@@ -686,7 +650,9 @@ hr {
   .tile, .tile .tile-inner {
     width: 58px;
     height: 58px;
-    line-height: 67.5px; }
+    line-height: 67.5px;
+    font-size: 35px;
+  }
   .tile.tile-position-1-1 {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
@@ -752,22 +718,19 @@ hr {
     -moz-transform: translate(202px, 202px);
     transform: translate(202px, 202px); }
 
-  .tile .tile-inner {
-    font-size: 35px; }
-
-  .game-message {
+  /*.sage {
     padding-top: 0; }
-    .game-message p {
+    .sage p {
       font-size: 12px !important;
       height: 30px !important;
       line-height: 30px !important;
       margin-top: 32% !important;
       margin-bottom: 0 !important; }
-    .game-message .lower {
+    .sage .lower {
       margin-top: 10px !important; }
-    .game-message.game-won .score-sharing {
+    .sage.game-won .score-sharing {
       margin-top: 10px; }
-}
+}*/
 
 @-webkit-keyframes pop-in-big {
   0% {
