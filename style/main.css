@@ -337,43 +337,23 @@ hr {
     color: #fff;
   }
 
-<<<<<<< HEAD
-    .tile.tile-2 { background-image: url("http://pfmscode.getnoodl.es/2048/hermes.jpg") !important; }
-    .tile.tile-4 { background-image: url("http://pfmscode.getnoodl.es/2048/apollo.jpg") !important; }
-    .tile.tile-8 { background-image: url("http://pfmscode.getnoodl.es/2048/ares.jpg") !important; }
-    .tile.tile-16 { background-image: url("http://pfmscode.getnoodl.es/2048/hercules.jpg") !important; }
-    .tile.tile-32 { background-image: url("http://pfmscode.getnoodl.es/2048/aphrodite.jpg") !important; }
-    .tile.tile-64 { background-image: url("http://pfmscode.getnoodl.es/2048/persephone.jpg") !important; }
-    .tile.tile-128 { background-image: url("http://pfmscode.getnoodl.es/2048/hades.jpg") !important; }
-    .tile.tile-256 { background-image: url("http://pfmscode.getnoodl.es/2048/poseidon.jpg") !important; }
-    .tile.tile-512 {
-      font-size: 45px;
-      background-image: url("http://pfmscode.getnoodl.es/2048/athena.jpg") !important;
-    }
-      @media screen and (max-width: 520px) { .tile.tile-512 .tile-inner { font-size: 25px; } }
-    .tile.tile-1024 { background-image: url("http://pfmscode.getnoodl.es/2048/hera.jpg") !important; }
-    .tile.tile-2048 { background-image: url("http://pfmscode.getnoodl.es/2048/zeus.jpg") !important; }
-=======
-    .tile.tile-2 { background-image: url("gods/hermes.jpg") !important; }
-    .tile.tile-4 { background-image: url("gods/hephaestus.jpg") !important; }
-    .tile.tile-8 { background-image: url("gods/ares.jpg") !important; }
-    .tile.tile-16 { background-image: url("gods/heracles.jpg") !important; }
-    .tile.tile-32 { background-image: url("gods/persephone.jpg") !important; }
-    .tile.tile-64 { background-image: url("gods/aphrodite.jpg") !important; }
-    .tile.tile-128 { background-image: url("gods/hades.jpg") !important; }
-    .tile.tile-256 { background-image: url("gods/athena.jpg") !important; }
-    .tile.tile-512 { background-image: url("gods/poseidon.jpg") !important; }
-    .tile.tile-1024 { background-image: url("gods/hera.jpg") !important; }
-    .tile.tile-2048 { background-image: url("gods/zeus.jpg") !important; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-128 .tile-inner, .tile.tile-256 .tile-inner, .tile.tile-512 .tile-inner { font-size: 25px; }
-      .tile.tile-1024 .tile-inner, .tile.tile-2048 .tile-inner, .tile.tile-super .tile-inner { font-size: 10px; }
-    }
->>>>>>> origin/key
-
-.key {
-  display: block;
+.tile.tile-2 { background-image: url("gods/hermes.jpg") !important; }
+.tile.tile-4 { background-image: url("gods/hephaestus.jpg") !important; }
+.tile.tile-8 { background-image: url("gods/ares.jpg") !important; }
+.tile.tile-16 { background-image: url("gods/heracles.jpg") !important; }
+.tile.tile-32 { background-image: url("gods/persephone.jpg") !important; }
+.tile.tile-64 { background-image: url("gods/aphrodite.jpg") !important; }
+.tile.tile-128 { background-image: url("gods/hades.jpg") !important; }
+.tile.tile-256 { background-image: url("gods/athena.jpg") !important; }
+.tile.tile-512 { background-image: url("gods/poseidon.jpg") !important; }
+.tile.tile-1024 { background-image: url("gods/hera.jpg") !important; }
+.tile.tile-2048 { background-image: url("gods/zeus.jpg") !important; }
+@media screen and (max-width: 520px) {
+  .tile.tile-128 .tile-inner, .tile.tile-256 .tile-inner, .tile.tile-512 .tile-inner { font-size: 25px; }
+  .tile.tile-1024 .tile-inner, .tile.tile-2048 .tile-inner, .tile.tile-super .tile-inner { font-size: 10px; }
 }
+
+.key { display: block; }
 .key-row {
   display: block !important;
   margin: 2.33em 0;
@@ -401,7 +381,6 @@ div.key-row.big { height: 13.5em !important; }
   border-radius: 8px;
   background-size: 100%;
 }
-
 
 @-webkit-keyframes appear {
   0% {
