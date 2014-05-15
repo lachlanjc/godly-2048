@@ -3,18 +3,32 @@ CACHE MANIFEST
 # Adds the ability to play the game offline
 # The following comment needs to be updated whenever a change is made.
 # Run `rake appcache:update` to do so
-# Updated: 2014-05-14T19:03:45+00:00
+# Updated: 2014-05-14T22:50:51-04:00
 
 # Main page
 index.html
 
 # CSS
 style/main.css
+style/mobile.css
 
 # Assets
 favicon.ico
 meta/apple-touch-icon.png
 meta/og_image.png
+
+# Gods
+gods/aphrodite.jpg
+gods/ares.jpg
+gods/athena.jpg
+gods/hades.jpg
+gods/heaphaestus.jpg
+gods/hera.jpg
+gods/heracles.jpg
+gods/hermes.jpg
+gods/persephone.jpg
+gods/poseidon.jpg
+gods/zeus.jpg
 
 # JavaScript
 js/animframe_polyfill.js
