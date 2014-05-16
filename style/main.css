@@ -92,10 +92,19 @@ h1.title {
 .score-container:after { content: "Score"; }
 .best-container:after { content: "Best"; }
 
+.social {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  width: 25%;
+  margin-top: 0.66em;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 10px;
-  line-height: 1.65;
+  line-height: 1.55;
 }
 a {
   color: #13A6FA;
@@ -487,7 +496,7 @@ div.key-row.big { height: 13.5em !important; }
 
 .game-intro {
   float: left;
-  line-height: 42px;
+  line-height: 1.66 !important;
   margin-bottom: 0;
   font-family: Georgia, serif;
   width: 65%;
