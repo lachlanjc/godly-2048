@@ -318,7 +318,7 @@ hr {
   margin: 2.33em 0;
   height: 10em;
 }
-div.key-row.big { height: 13.5em !important; }
+div.key-row.big { height: 13.5em; }
 .key-row .content h4 {
   font-size: 1.25em;
   margin: 0;
