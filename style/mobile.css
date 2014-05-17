@@ -1,17 +1,26 @@
 @media screen and (max-width: 520px) {
-html, body { font-size: 16px; }
 body {
-  margin-top: 0;
+  margin: 0 auto !important;
   padding: 20px;
+  font-size: 16px;
 }
 h1.title {
-  font-size: 3.33em;
+  font-size: 3.25em;
   margin-bottom: 15px;
   text-align: center;
 }
 .container {
   width: 280px;
   margin: 0 auto;
+}
+.social {
+  width: 85%;
+  height: 25px !important;
+  margin: 1.33em auto auto 2.5em !important;
+}
+.social iframe {
+  width: auto;
+  height: 25px !important;
 }
 .scores-container {
   width: 100%;
@@ -22,10 +31,11 @@ h1.title {
 }
 .score-container, .best-container {
   margin-top: 0;
-  padding: 2px 6px;
+  padding: 0 6px;
   min-width: 40px;
 }
 .heading { margin-bottom: 10px; }
+.restart-button { margin-top 0 !important; }
 .game-intro {
   width: 100%;
   display: block;
@@ -50,7 +60,6 @@ h1.title {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
   .game-message {
     display: none;
     position: absolute;
@@ -116,7 +125,29 @@ h1.title {
   line-height: 24px;
   font-size: 25px;
 }
-.key .tile { border-radius: 15px !important; }
+
+/********** KEY **********/
+.key-row { height: 15em !important; }
+.key-row.big { height: 18em; }
+.key .tile {
+  border-radius: 12px !important;
+  width: 2.5em;
+  height: 2.5em;
+}
+.key-row.hermes { height: 12em !important; }
+.key-row.hephaestus { height: 13.5em !important; }
+.key-row.ares { height: 9.5em !important; }
+.key-row.heracles { height: 17.5em !important; }
+.key-row.persephone { height: 14.75em !important; }
+.key-row.aphrodite { height: 12.25em !important; }
+.key-row.hades { height: 13.66em !important; }
+.key-row.athena { height: 19em !important; }
+.key-row.poseidon { height: 12.5em !important; }
+.key-row.hera { height: 15em !important; }
+.key-row.zeus { height: 16em !important; }
+
+/********** END KEY **********/
+
 .tile.tile-position-1-1 {
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -267,17 +298,18 @@ h1.title {
   opacity: 1;
   margin-top: 10px; } }
 .app-notice {
-position: relative;
--webkit-animation: pop-in-big 700ms ease 2s both;
--moz-animation: pop-in-big 700ms ease 2s both;
-animation: pop-in-big 700ms ease 2s both;
-background: #edc53f;
-color: white;
-padding: 18px;
-margin-top: 30px;
-height: 56px;
-box-sizing: border-box;
-border-radius: 5px; }
+  position: relative;
+  -webkit-animation: pop-in-big 700ms ease 2s both;
+  -moz-animation: pop-in-big 700ms ease 2s both;
+  animation: pop-in-big 700ms ease 2s both;
+  background: #edc53f;
+  color: white;
+  padding: 18px;
+  margin-top: 30px;
+  height: 56px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
 .app-notice:after {
   content: "";
   display: block;
@@ -288,18 +320,15 @@ border-radius: 5px; }
   cursor: pointer;
   margin-left: 10px;
   opacity: 0.7; }
-.app-notice p {
-  margin-bottom: 0; }
-.app-notice, .app-notice p {
-  line-height: 20px; }
-.app-notice a {
-  color: white; }
-@media screen and (max-width: 520px) {
-  .app-notice {
-    -webkit-animation: pop-in-small 700ms ease 2s both;
-    -moz-animation: pop-in-small 700ms ease 2s both;
-    animation: pop-in-small 700ms ease 2s both;
-    margin-top: 10px;
-    height: 76px; }
+.app-notice p { margin-bottom: 0; }
+.app-notice, .app-notice p { line-height: 20px; }
+.app-notice a { color: white; }
+.app-notice {
+  -webkit-animation: pop-in-small 700ms ease 2s both;
+  -moz-animation: pop-in-small 700ms ease 2s both;
+  animation: pop-in-small 700ms ease 2s both;
+  margin-top: 10px;
+  height: 76px;
 }
+hr:last-child { margin-bottom: 0 !important; }
 }

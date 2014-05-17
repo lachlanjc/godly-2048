@@ -18,12 +18,10 @@ h1.title {
   display: block;
   float: left;
 }
-
 @-webkit-keyframes move-up {
   0% {
     top: 25px;
     opacity: 1; }
-
   100% {
     top: -50px;
     opacity: 0; } }
@@ -31,7 +29,6 @@ h1.title {
   0% {
     top: 25px;
     opacity: 1; }
-
   100% {
     top: -50px;
     opacity: 0; } }
@@ -39,14 +36,12 @@ h1.title {
   0% {
     top: 25px;
     opacity: 1; }
-
   100% {
     top: -50px;
     opacity: 0; } }
 .scores-container {
   float: right;
   text-align: right; }
-
 .score-container, .best-container {
   position: relative;
   display: inline-block;
@@ -88,7 +83,6 @@ h1.title {
   }
 .score-container:after { content: "Score"; }
 .best-container:after { content: "Best"; }
-
 .social {
   display: flex;
   display: -webkit-flex;
@@ -97,7 +91,6 @@ h1.title {
   width: 25%;
   margin-top: 0.66em;
 }
-
 p {
   margin-top: 0;
   margin-bottom: 10px;
@@ -109,39 +102,32 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-
 strong.important {
   text-transform: uppercase;
   font-family: "proxima-nova", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 hr {
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #f2f2f2;
   margin: 1.5em auto;
 }
 .game-info { font-family: Georgia, serif; }
-
 .container {
   width: 500px;
   margin: 0 auto; }
-
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
 @-moz-keyframes fade-in {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
 @keyframes fade-in {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
 .game-container {
@@ -163,7 +149,6 @@ hr {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
 .game-message {
   display: none;
   position: absolute;
@@ -201,11 +186,9 @@ hr {
       display: inline-block; }
   .game-message.game-won, .game-message.game-over {
     display: block; }
-
 .grid-container {
   position: absolute;
   z-index: 1; }
-
 .grid-row { margin-bottom: 15px; }
   .grid-row:last-child {
     margin-bottom: 0; }
@@ -213,7 +196,6 @@ hr {
     content: "";
     display: block;
     clear: both; }
-
 .grid-cell {
   width: 106.25px;
   height: 106.25px;
@@ -224,11 +206,9 @@ hr {
   box-shadow: inset 0 2px 54px rgba(0,0,0,0.1);
 }
   .grid-cell:last-child { margin-right: 0; }
-
 .tile-container {
   position: absolute;
   z-index: 2; }
-
 .tile, .tile .tile-inner {
   width: 107px;
   height: 107px;
@@ -297,7 +277,6 @@ hr {
   -webkit-transform: translate(363px, 363px);
   -moz-transform: translate(363px, 363px);
   transform: translate(363px, 363px); }
-
 .tile {
   position: absolute;
   background-color: transparent !important;
@@ -318,7 +297,6 @@ hr {
     text-shadow: 0 2px 5px rgba(0,0,0,0.5);
     color: #fff;
   }
-
 .tile.tile-2 { background-image: url("../gods/hermes.jpg") !important; }
 .tile.tile-4 { background-image: url("../gods/hephaestus.jpg") !important; }
 .tile.tile-8 { background-image: url("../gods/ares.jpg") !important; }
@@ -334,7 +312,6 @@ hr {
   .tile.tile-128 .tile-inner, .tile.tile-256 .tile-inner, .tile.tile-512 .tile-inner { font-size: 25px; }
   .tile.tile-1024 .tile-inner, .tile.tile-2048 .tile-inner, .tile.tile-super .tile-inner { font-size: 10px; }
 }
-
 .key { display: block; }
 .key-row {
   display: block !important;
@@ -363,14 +340,12 @@ div.key-row.big { height: 13.5em !important; }
   border-radius: 8px;
   background-size: 100%;
 }
-
 @-webkit-keyframes appear {
   0% {
     opacity: 0;
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
-
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -382,7 +357,6 @@ div.key-row.big { height: 13.5em !important; }
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
-
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -394,7 +368,6 @@ div.key-row.big { height: 13.5em !important; }
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
-
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -407,18 +380,15 @@ div.key-row.big { height: 13.5em !important; }
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
-
 @-webkit-keyframes pop {
   0% {
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
-
   50% {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     transform: scale(1.2); }
-
   100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -428,12 +398,10 @@ div.key-row.big { height: 13.5em !important; }
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
-
   50% {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     transform: scale(1.2); }
-
   100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -443,12 +411,10 @@ div.key-row.big { height: 13.5em !important; }
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
-
   50% {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     transform: scale(1.2); }
-
   100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -461,12 +427,10 @@ div.key-row.big { height: 13.5em !important; }
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
-
 .above-game:after {
   content: "";
   display: block;
   clear: both; }
-
 .game-intro {
   float: left;
   line-height: 1.66 !important;
@@ -475,7 +439,6 @@ div.key-row.big { height: 13.5em !important; }
   width: 65%;
   padding-top: 5px;
 }
-
 .restart-button {
   display: inline-block;
   background-color: #13A6FA;
