@@ -6,14 +6,11 @@ html, body {
   font-family: "proxima-nova", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
-
 body { margin: 3em 0; }
-
 .heading:after {
   content: "";
   display: block;
   clear: both; }
-
 h1.title {
   font-size: 3em;
   line-height: 1.1;
@@ -109,8 +106,9 @@ p {
 a {
   color: #13A6FA;
   font-weight: bold;
-  text-decoration: underline;
-  cursor: pointer; }
+  text-decoration: none;
+  cursor: pointer;
+}
 
 strong.important {
   text-transform: uppercase;
@@ -146,24 +144,6 @@ hr {
 
   100% {
     opacity: 1; } }
-@-webkit-keyframes slide-up {
-  0% {
-    margin-top: 32%; }
-
-  100% {
-    margin-top: 20%; } }
-@-moz-keyframes slide-up {
-  0% {
-    margin-top: 32%; }
-
-  100% {
-    margin-top: 20%; } }
-@keyframes slide-up {
-  0% {
-    margin-top: 32%; }
-
-  100% {
-    margin-top: 20%; } }
 .game-container {
   margin: 2em 0;
   position: relative;
@@ -207,7 +187,7 @@ hr {
     font-weight: bold;
     height: 60px;
     line-height: 1.5;
-    margin: auto;
+    margin: 2em auto;
     width: 75% !important;
   }
   .game-message .lower {
@@ -221,13 +201,6 @@ hr {
       display: inline-block; }
   .game-message.game-won, .game-message.game-over {
     display: block; }
-    .game-message.game-won p, .game-message.game-over p {
-      -webkit-animation: slide-up 1.5s ease-in-out 2500ms;
-      -moz-animation: slide-up 1.5s ease-in-out 2500ms;
-      animation: slide-up 1.5s ease-in-out 2500ms;
-      -webkit-animation-fill-mode: both;
-      -moz-animation-fill-mode: both;
-      animation-fill-mode: both; }
 
 .grid-container {
   position: absolute;
@@ -500,6 +473,7 @@ div.key-row.big { height: 13.5em !important; }
   margin-bottom: 0;
   font-family: Georgia, serif;
   width: 65%;
+  padding-top: 5px;
 }
 
 .restart-button {
@@ -532,5 +506,4 @@ div.key-row.big { height: 13.5em !important; }
   margin-top: 125px;
  }
 .restart-button:active, .retry-button:active { box-shadow: inset 0 3px 5px rgba(0,0,0,0.2) !important; }
-
 .game-explanation { font-family: Georgia, serif; }
